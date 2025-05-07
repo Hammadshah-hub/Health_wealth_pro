@@ -1,0 +1,249 @@
+/* Header-section */
+.header-rtl {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 100px 0 40px;
+    background: transparent;
+    font-family: inherit;
+    padding-bottom: 120px;
+}
+
+.header-rtl>* {
+    flex-shrink: 0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 130.1364288330078px;
+    height: 75px;
+    margin-left: 12px;
+    position: relative;
+    top: 32px;
+    left: 123px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a3c5a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 36px;
+    width: 458px;
+    height: 45px;
+    position: relative;
+    top: 31px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a3c5a;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #007aff;
+}
+
+.login-btn {
+    background: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 133px;
+    height: 45px;
+    position: relative;
+    top: 14px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    gap: 10px;
+    font-size: 23px;
+    font-family: 'Open Sans Hebrew';
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    background: #005bb5;
+}
+
+/* Footer-section */
+.footer-main {
+    background: #03233a;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    direction: rtl;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 118px 120px 39px 0;
+    max-width: 100vw;
+    width: 1435px;
+    height: 369px;
+
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+    flex: 1;
+}
+
+.footer-col {
+    color: #fff;
+    min-width: 120px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-col li {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+}
+
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+    margin-left: 130px;
+}
+
+.footer-logo-img {
+    width: 180px;
+    height: 104px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+}
+
+.footer-logo-text {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer-topbar {
+    background: #fff;
+    border-top: 2px solid #b6f1b1;
+    border-bottom: 2px solid #b6f1b1;
+    border-right: 2px solid #b6f1b1;
+    border-left: 2px solid #b6f1b1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 100px;
+    gap: 78px;
+    min-height: 48px;
+    font-family: 'Open Sans', sans-serif;
+    direction: rtl;
+}
+
+.footer-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-topbar-bold {
+    font-weight: 700;
+    font-size: 16px;
+    color: #222;
+   
+}
+
+.footer-topbar-logo {
+    width: 42px;
+    height: 31px;
+}
+
+.footer-topbar-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-topbar-link {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.footer-topbar-link:hover {
+    color: #007aff;
+}
+
+.footer-topbar-divider {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin: 0 6px;
+}
+
+.footer-topbar-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
