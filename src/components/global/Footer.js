@@ -1,70 +1,66 @@
 import React from 'react';
 import '../../assets/css/style.css';
 import logo2 from '../../assets/logo/logo-footer2.png';
-import logo1 from '../../assets/logo/logo-footer.png';
-import logo3 from '../../assets/logo/Vector.png';
-import logo4 from '../../assets/logo/Vector1.png';
-import logo5 from '../../assets/logo/Vector2.png';
 
 const Footer = () => {
     return (
-        <>
-            <div className="footer-topbar">
-                
-                <div className="footer-topbar-right">
-                    <img src={logo1} alt="TheraPlus Logo" className="footer-topbar-logo" />
-                    <span className="footer-topbar-bold">נהל את העסק שלך, במקום אחד.</span>
-                    <span className="footer-topbar-divider">|</span>
-                </div>
-                <div className="footer-topbar-links">
-                    <a href="#" className="footer-topbar-link"><img src={logo3} alt="מאגרי המידע" className="footer-topbar-icon" /><span>מאגרי המידע</span></a>
-                    <span className="footer-topbar-divider">|</span>
-                    <a href="#" className="footer-topbar-link"><img src={logo4} alt="הנחה ושירות לקוחות" className="footer-topbar-icon" /><span>הנחה ושירות לקוחות</span></a>
-                    <span className="footer-topbar-divider">|</span>
-                    <a href="#" className="footer-topbar-link"><img src={logo5} alt="מחירים ושיפור ביצועים ע" className="footer-topbar-icon" /><span>מחירים ושיפור ביצועים ע"י AI</span></a>
+        <footer className="footer-main" style={{
+            background: 'linear-gradient(0deg, #032B48, #032B48), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))'
+        }}>
+            <div className="container py-5">
+                <div className="row justify-content-between sec-d" dir="rtl">
+                    {/* Logo Column */}
+                    <div className="col-lg-3 mb-4 mb-lg-0 text-center">
+                        <img src={logo2} alt="TheraPlus" className="mb-3 footer-logo" style={{ width: '180px' }} />
+                    </div>
+
+                    {/* Navigation Columns */}
+                    <div className="col-lg-8">
+                        <div className="row">
+                            {/* לעסקים Column */}
+                            <div className="col-6 col-md-3 mb-4">
+                                <h5 className="footer-heading">לעסקים</h5>
+                                <ul className="footer-links">
+                                    <li><a href="#">הצטרפות</a></li>
+                                    <li><a href="#">תמיכה טכנית</a></li>
+                                    <li><a href="#">תנאי שימוש</a></li>
+                                </ul>
+                            </div>
+
+                            {/* ללקוחות Column */}
+                            <div className="col-6 col-md-3 mb-4">
+                                <h5 className="footer-heading">ללקוחות</h5>
+                                <ul className="footer-links">
+                                    <li><a href="#">הזמנת תור</a></li>
+                                    <li><a href="#">תמיכה ללקוחות</a></li>
+                                </ul>
+                            </div>
+
+                            {/* פרטיות Column */}
+                            <div className="col-6 col-md-3 mb-4">
+                                <h5 className="footer-heading">פרטיות</h5>
+                                <ul className="footer-links">
+                                    <li><a href="#">מדיניות פרטיות</a></li>
+                                    <li><a href="#">תנאי שימוש</a></li>
+                                    <li><a href="#">הצהרת נגישות</a></li>
+                                </ul>
+                            </div>
+
+                            {/* אודות Column */}
+                            <div className="col-6 col-md-3 mb-4">
+                                <h5 className="footer-heading">אודות</h5>
+                                <ul className="footer-links">
+                                    <li><a href="#">עלינו</a></li>
+                                    <li><a href="#">יתרונות</a></li>
+                                    <li><a href="#">הלקוחות שלנו</a></li>
+                                    <li><a href="#">יצירת קשר</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <footer className="footer-main">
-                <div className="footer-content">
-                    <div className="footer-logo-section">
-                        <img src={logo2} alt="TheraPlus Logo" className="footer-logo-img" />
-                    </div>
-                    <div className="footer-columns">
-                        <div className="footer-col">
-                            <h4>אודות</h4>
-                            <ul>
-                                <li><a href="#">עלינו</a></li>
-                                <li><a href="#">חבויות</a></li>
-                                <li><a href="#">הלקוחות שלנו</a></li>
-                                <li><a href="#">צור קשר</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-col">
-                            <h4>לעסקים</h4>
-                            <ul>
-                                <li><a href="#">הצטרפות</a></li>
-                                <li><a href="#">הטמעה לעסקים</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-col">
-                            <h4>ללקוחות</h4>
-                            <ul>
-                                <li><a href="#">הזמנת תור</a></li>
-                                <li><a href="#">הטמעה ללקוחות</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-col">
-                            <h4>פרטיות</h4>
-                            <ul>
-                                <li><a href="#">מדיניות פרטיות</a></li>
-                                <li><a href="#">תנאי שימוש</a></li>
-                                <li><a href="#">הצהרת נגישות</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </>
+        </footer>
     );
 };
 
