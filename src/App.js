@@ -1,5 +1,7 @@
 import Header from './components/global/Header';
 import Footer from './components/global/Footer';
+import Feedback from './components/pages/Home/Feedback';
+import FreeSubscriptionStart from './components/pages/Home/FreeSubscriptionStart';
 
 import './App.css';
 
@@ -7,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-     
+      <FreeSubscriptionStart />
+      <Feedback />
       <Footer />
     </div>
   );

@@ -16,6 +16,7 @@ const Header = () => {
                 <div className="container">
                     <div className="d-flex justify-content-between align-items-center w-100">
                         {/* Right Side - Menu Button & Navigation */}
+                        <button className="login-btn d-none d-lg-block">דברו איתנו</button>
                         <div className="d-flex align-items-center">
                             {/* Mobile Menu Button */}
                             <button
@@ -27,20 +28,22 @@ const Header = () => {
                                     <span></span>
                                     <span></span>
                                     <span></span>
+                                    <span></span>
                                 </div>
                             </button>
                             {/* Center - Login Button */}
-                            <button className="login-btn d-none d-lg-block">דברו איתנו</button>
 
                             {/* Desktop Navigation Links */}
                             <div className="nav-links d-none d-lg-flex">
                                 <Link to="/about" className="nav-link">מי אנחנו</Link>
                                 <Link to="/services" className="nav-link">השירות שלנו</Link>
+                                <Link to="/help" className="nav-link">שאלות תשובות</Link>
                                 <Link to="/contact" className="nav-link">צור קשר</Link>
                             </div>
                         </div>
 
-                        
+
+
 
                         {/* Left Side - Logo */}
                         <Link to="/" className="navbar-brand">
@@ -54,8 +57,9 @@ const Header = () => {
                             <Link to="/about" className="mobile-nav-link">מי אנחנו</Link>
                             <Link to="/services" className="mobile-nav-link">השירות שלנו</Link>
                             <Link to="/contact" className="mobile-nav-link">צור קשר</Link>
+                            <button className=" mobile-login-btn">דברו איתנו</button>
                         </div>
-                        <button className="login-btn mobile-login-btn">דברו איתנו</button>
+
                     </div>
                 </div>
             </nav>

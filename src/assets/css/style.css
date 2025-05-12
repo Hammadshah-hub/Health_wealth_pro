@@ -2,10 +2,10 @@
 .header-wrapper {
     background-color: #ffffff;
     padding: 0;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     font-family: 'Open Sans Hebrew', sans-serif;
 }
@@ -44,6 +44,9 @@
     font-size: 18px;
     font-weight: 400;
     transition: color 0.2s ease;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
 .nav-link:hover {
@@ -66,7 +69,24 @@
     margin: 0 2rem;
 }
 
+.mobile-login-btn {
+    background: #0066FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 0.625rem 1.5rem;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
 .login-btn:hover {
+    background: #0052CC;
+}
+
+.mobile-login-btn:hover {
     background: #0052CC;
 }
 
@@ -155,6 +175,9 @@
     font-weight: 400;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
 .mobile-login-btn {
@@ -195,20 +218,24 @@
     .footer-logo {
         display: none;
 
-        
+
     }
-        .sec-d {
-            padding-top: 49px;
-        }
+
+    .sec-d {
+        padding-top: 49px;
+    }
 }
 
-/* Footer styles */
+/* ######################################Footer-Section############################################### */
 .footer-main {
     background: #032B48;
-    padding: 60px 0;
     padding-top: 120px;
     color: #ffffff;
     font-family: 'Open Sans Hebrew', sans-serif;
+}
+
+.footer-main .container {
+    padding-top: 0 !important;
 }
 
 .footer-heading {
@@ -353,73 +380,713 @@
     color: #fff;
 }
 
-.footer-topbar {
-    background: #fff;
-    border-top: 2px solid #b6f1b1;
-    border-bottom: 2px solid #b6f1b1;
-    border-right: 2px solid #b6f1b1;
-    border-left: 2px solid #b6f1b1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 100px;
-    gap: 78px;
-    min-height: 48px;
-    font-family: 'Open Sans Hebrew', sans-serif;
-    direction: rtl;
+
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+    overflow: hidden;
 }
 
-.footer-topbar-right {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+/* Footer Topbar (pixel-perfect) */
+.footer-topbar {
+    background: #fff;
+
+    font-family: 'Open Sans Hebrew', sans-serif;
+    direction: rtl;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 90px;
+
+}
+
+.footer-topbar .container-fluid {
+    border: 1px solid transparent;
+    /* Set border width and make it visible */
+    border-image: linear-gradient(90deg, #05B6F8, #82DD7A);
+    border-image-slice: 1;
+    margin: 0 auto;
+
+
+}
+
+.footer-topbar .container-fluid .container {
+    margin: 0 !important;
+    min-height: 50px;
+    gap: 91px;
+
 }
 
 .footer-topbar-bold {
+    font-family: 'Open Sans Hebrew', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
     color: #222;
-
-}
-
-.footer-topbar-logo {
-    width: 42px;
-    height: 31px;
-}
-
-.footer-topbar-links {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    vertical-align: middle;
 }
 
 .footer-topbar-link {
     color: #b0b0b0;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Open Sans Hebrew', sans-serif;
     font-weight: 400;
     transition: color 0.2s;
+    line-height: 1.2;
+    vertical-align: middle;
 }
 
 .footer-topbar-link:hover {
     color: #007aff;
 }
 
-.footer-topbar-divider {
-    color: #b0b0b0;
-    font-size: 18px;
-    margin: 0 6px;
-}
+/* Divider after bold and each link except last */
 
-.footer-topbar-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 6px;
+
+.footer-topbar-bold:not(:first-child)::after {
+    content: '|';
+    color: #b0b0b0;
+    font-size: 31px;
+    font-weight: 100;
+    margin: 0 5px;
     vertical-align: middle;
 }
 
-/* Prevent body scroll when menu is open */
-body.menu-open {
-    overflow: hidden;
+.footer-topbar-link:not(:last-child)::after {
+    content: '|';
+    color: #b0b0b0;
+    font-size: 18px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+.footer-topbar-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+}
+
+.footer-topbar-icon.bold-icon {
+    width: 42px;
+    height: 31px;
+}
+
+.footer-topbar-icon:not(.bold-icon) {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Footer Topbar */
+@media (max-width: 768px) {
+    .footer-topbar .container-fluid .container {
+        gap: 20px !important;
+        justify-content: center !important;
+    }
+
+    .footer-topbar-icon {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .footer-topbar-icon.bold-icon {
+        width: 32px !important;
+        height: 24px !important;
+    }
+
+    .footer-topbar-bold {
+        font-size: 16px;
+    }
+
+    .footer-topbar-link {
+        font-size: 14px;
+    }
+
+    .top-links {
+        display: none !important;
+    }
+
+    .footer-topbar-bold:not(:first-child)::after,
+    .footer-topbar-link:not(:last-child)::after {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-topbar .container-fluid .container {
+        gap: 10px !important;
+        justify-content: center !important;
+    }
+
+    .footer-topbar-icon {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .footer-topbar-icon.bold-icon {
+        width: 42px !important;
+        height: 31px !important;
+    }
+
+    .footer-topbar-bold {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer-topbar-link {
+        font-size: 12px;
+    }
+
+    .top-links {
+        display: none !important;
+    }
+
+    .footer-topbar-bold:not(:first-child)::after,
+    .footer-topbar-link:not(:last-child)::after {
+        display: none;
+    }
+}
+
+/* Responsive Main Footer */
+@media (max-width: 991.98px) {
+    .footer-main {
+        padding: 40px 0;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer-main {
+        padding: 30px 0;
+    }
+
+    .footer-heading {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+
+    .footer-logo {
+        width: 140px !important;
+    }
+}
+
+.feedback-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 130px;
+    margin: 0 auto;
+
+}
+
+.feedback-container {
+    width: 100%;
+    max-width: 1296px;
+    background: transparent;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 98px;
+}
+
+.feedback-info {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.feedback-title {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #032b48;
+}
+
+.feedback-desc {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.feedback-email {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.feed-bck {
+    display: flex;
+    padding-top: 88px;
+    gap: 40px;
+}
+
+.feedback-service-title {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #032b48;
+    margin-bottom: 5px;
+}
+
+.feedback-service-desc {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #222;
+    padding-top: 5px;
+}
+
+.feedback-form {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    padding: 28px 18px 18px 18px;
+    box-shadow: 0 2px 8px rgba(5, 182, 248, 0.04);
+    min-width: 320px;
+    max-width: 370px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.feedback-form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    /* Border width */
+    background: linear-gradient(90deg, #05B6F8 19.72%, #82DD7A 38.39%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.form-title {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #032b48;
+    margin-bottom: 6px;
+    margin-right: 12px;
+}
+
+.form-desc {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #222;
+    margin-bottom: 18px;
+    margin-right: 12px;
+}
+
+.form-control {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 0;
+    color: #8E8E8E !important;
+    direction: rtl;
+}
+
+.form-control:focus {
+    border-color: #05b6f8;
+    outline: none;
+    background: #fff;
+}
+
+.btn-primary {
+    background: #007aff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    margin-top: 8px;
+}
+
+.btn-primary:hover {
+    background: #005bb5;
+}
+
+.form-note {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    padding-bottom: 12px;
+    padding: 3px 26px;
+}
+
+.form-note a {
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+}
+
+@media (max-width: 991.98px) {
+    .feedback-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    .feedback-info {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .feedback-wrapper {
+        min-height: 74vh;
+        padding-top: 0 !important;
+    }
+
+    .footer-topbar {
+        padding-top: 27px;
+    }
+
+    .feedback-container {
+        padding: 20px 10px;
+    }
+
+    .feed-bck {
+        display: none;
+    }
+
+    .feedback-form {
+        min-width: 0;
+        max-width: 100%;
+        padding: 18px 6px 12px 6px;
+    }
+
+    .feedback-title {
+        font-size: 1.2rem;
+    }
+
+    .feedback-title,
+    .feedback-desc,
+    .feedback-email {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feedback-title {
+        font-family: 'Open Sans Hebrew', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .feedback-desc {
+        font-family: 'Open Sans Hebrew', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .feedback-email {
+        font-family: 'Open Sans Hebrew', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 16px;
+        color: #222;
+    }
+
+    .feedback-form {
+        width: 95vw;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+        border-radius: 16px;
+        padding: 16px 8px 12px 8px;
+        box-sizing: border-box;
+        background-color: #e7dddd;
+    }
+
+    .form-control {
+        background-color: #e7dddd;
+        border-color: #d1c4c4;
+    }
+
+    .form-title {
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .form-desc {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .form-control {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        border-radius: 16px;
+        padding: 10px 0;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .form-note {
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .form-note a {
+        color: #000 !important;
+        text-decoration: none !important;
+        font-weight: 700 !important;
+    }
+
+    .subscription-btns {
+        flex-direction: column-reverse !important;
+        gap: 10px !important;
+    }
+
+    .right-side {
+        padding: 40px 25px !important;
+        padding-top: 0 !important;
+    }
+    .free-subscription-section{
+        padding: 10px 20px !important;
+    }
+    .subscription-heading {
+        line-height: 33px !important;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .subscription-description{
+            font-size: 16px;
+            font-weight: 700;
+    }
+    .subscription-logo {
+        height: 45px;
+        width: 78px;
+    }
+    .subscription-container{
+        
+        display: flex;
+        flex-direction: column-reverse;
+        
+            
+            
+    }
+    .flex-wrap{
+            display: flex !important;
+            flex-direction: column-reverse !important;
+    }
+    .left-img {
+        padding-top: 0 !important;
+    }
+    .right-side{
+            text-align: center !important;
+            align-items: center !important;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .free-subscription-section .row {
+        border-radius: 20px !important;
+        padding: 16px 0 !important;
+    }
+
+    .free-subscription-section h1 {
+        font-size: 24px !important;
+    }
+
+    .free-subscription-section p {
+        font-size: 15px !important;
+    }
+
+    .free-subscription-section img[alt="TheraPlus App Preview"] {
+        max-width: 73vw !important;
+    }
+
+    .free-subscription-section .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+@media(max-width: 400px){
+    .subscription-btns {
+            flex-direction: column-reverse !important;
+            gap: 10px !important;
+        }
+        .free-subscription-section {
+            padding: 10px 20px !important;
+        }
+    
+        .subscription-heading {
+            line-height: 33px !important;
+            font-size: 25px;
+            font-weight: 700;
+        }
+    
+        .subscription-description {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    
+        .subscription-logo {
+            height: 45px;
+            width: 78px;
+        }
+    
+        .subscription-container {
+    
+            display: flex;
+            flex-direction: column-reverse;
+            
+    
+    
+        }
+}
+
+/* ######################################Free-Subscription-Section############################################### */
+.right-side {
+    padding: 59px 69px;
+}
+
+.left-img {
+    position: relative;
+    padding-top: 72px;
+
+}
+
+.image-gradient-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    border-radius: 0 0 16px 32px;
+    pointer-events: none;
+    background: linear-gradient(180.12deg, rgba(217, 217, 217, 0) 24.85%, #0066FF 91.69%);
+    z-index: 2;
+}
+
+.subscription-container {
+    background: #0066FF;
+    border-radius: 28px;
+    
+}
+
+.left-img {
+    position: relative;
+}
+
+.subscription-image {
+    max-width: 338px;
+    width: 338px;
+    height: 468.55px;
+}
+
+.subscription-logo {
+    width: 130px;
+    height: 75px;
+    margin-bottom: 18px;
+}
+
+.subscription-heading {
+
+
+    margin-bottom: 1rem;
+    direction: rtl;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.subscription-description {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 18px;
+    color: #eaf6ff;
+    margin-bottom: 1.5rem;
+    direction: rtl;
+    text-align: justify;
+}
+
+.subscription-start-btn {
+    padding: 15px;
+    color: #000000;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.subscription-start-btn2 {
+    padding: 9px 30px;
+    font-size: 25px;
 }
