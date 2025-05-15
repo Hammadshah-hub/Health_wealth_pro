@@ -9,12 +9,16 @@ import FAQClient2 from './components/pages/Home/FAQClient2';
 import Features from './components/pages/Home/SystemFeatures';
 import Advantages from './components/pages/Home/Advantages';
 import Hero from './components/pages/Home/Hero';
+import Signup from './components/pages/Registration/Signup';
+
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      
+      <Signup />
       <Header />
       <Hero />
       <Advantages />
