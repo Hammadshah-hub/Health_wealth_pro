@@ -2499,6 +2499,15 @@ body.menu-open {
     direction: rtl;
 }
 
+.login-container{
+    padding-left: 0px !important;
+    margin: 0px !important;
+}
+
+.login-image {
+    background-color: #f8fbff !important;
+}
+
 .login-image img {
     width: 100%;
     height: auto;
@@ -2514,7 +2523,7 @@ body.menu-open {
     line-height: 40px;
 }
 
-.login-form-header-button .signup-button{
+.login-form-header-button .login-form-header-button-google{
     background-color: #FAFAFA;
     color: #616161;
     border: 1px solid #EEEEEE;
@@ -2546,16 +2555,19 @@ body.menu-open {
     color: #032B48 !important;
 }
 
+
 .login-form-body .form-group input:focus{
     outline: none !important;
     border: 1px solid #BCBCBC !important;
     box-shadow: none !important;
 }
-
-.login-form-body .forgot-password{
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    color: #0066FF !important;
+.eye-icon-password .eye-icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
 }
 
 .login-form-button {
@@ -2589,7 +2601,6 @@ body.menu-open {
     color: #0066FF !important;
 }
 
-/* Form styling End */
 
 /* ====================Ahmer css end========================== */
 
