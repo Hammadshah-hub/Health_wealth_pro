@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Signup.css';
+import '../../../assets/css/style.css';
 import calendarImage from '../../../assets/img/Registration/main.png'; // Check your path
 import googleIcon from '../../../assets/icons/google-icon.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -54,11 +54,15 @@ const Signup = () => {
                             <h3 className="hebrew-text">הצטרפו אלינו</h3>
                             <h3 className="hebrew-text">והתחילו לנהל את העסק שלכם בקלות</h3>
                         </div>
+                        <div className='google-button'>
 
                         <button className="google-signup-button" onClick={handleGoogleSignup}>
                             <img src={googleIcon} alt="Google" className="google-icon" />
                             Sign up with Google
                         </button>
+                        </div>
+
+                        
 
                         <form className='Signup-form' onSubmit={handleSubmit}>
                             <div className="mb-3">
@@ -74,7 +78,7 @@ const Signup = () => {
                                 />
                             </div>
 
-                            {/* 🔐 PASSWORD FIELD WITH SHOW/HIDE */}
+                            
                             <div className="mb-3" style={{ position: "relative" }}>
                                 <label htmlFor="exampleInputPassword1" className="form-label">סיסמה</label>
                                 <span
@@ -84,7 +88,6 @@ const Signup = () => {
                                         top: "38px",
                                         left: "20px",
                                         cursor: "pointer",
-                                        zIndex: 2,
                                         color: "#BCBCBC"
                                     }}
                                 >
@@ -98,7 +101,7 @@ const Signup = () => {
                                     value={formData.password}
                                     onChange={handleInputChange}
                                     placeholder="**************"
-                                    style={{ paddingRight: "40px" }}
+                                    
                                 />
                                
                             </div>

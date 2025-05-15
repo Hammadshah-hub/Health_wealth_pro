@@ -1,3 +1,6 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from './components/global/Header';
 import Footer from './components/global/Footer';
 import Feedback from './components/pages/Home/Feedback';
@@ -9,28 +12,39 @@ import FAQClient2 from './components/pages/Home/FAQClient2';
 import Features from './components/pages/Home/SystemFeatures';
 import Advantages from './components/pages/Home/Advantages';
 import Hero from './components/pages/Home/Hero';
-import Signup from './components/pages/Registration/Signup';
 
+import Login from './components/pages/Auth/login';
+import Signup from './components/pages/Auth/Signup';
 
 import './App.css';
 
-function App() {
+function HomePage() {
   return (
-    <div className="App">
-      
-      <Signup />
+    <>
       <Header />
       <Hero />
       <Advantages />
-      <Features /> 
-      <FAQClient /> 
-      <FAQClient2 /> 
+      <Features />
+      <FAQClient />
+      <FAQClient2 />
       <CardsSection />
       <FAQSection />
       <FreeSubscriptionStart />
       <Feedback />
       <Footer />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+   
   );
 }
 
