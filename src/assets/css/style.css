@@ -2446,165 +2446,6 @@ body.menu-open {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====================Ahmer css========================== */
-
-.rtl {
-    direction: rtl;
-}
-
-.login-container{
-    padding-left: 0px !important;
-    margin: 0px !important;
-}
-
-.login-image {
-    background-color: #f8fbff !important;
-}
-
-.login-image img {
-    width: 100%;
-    height: auto;
-}
-
-.login-form{
-    padding: 100px 100px;
-}
-
-.login-form-header-text h3{
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 40px;
-}
-
-.login-form-header-button .login-form-header-button-google{
-    background-color: #FAFAFA;
-    color: #616161;
-    border: 1px solid #EEEEEE;
-    padding: 15px 60px;
-    border-radius: 48px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22.53px;
-    letter-spacing: -0.2px;
-}
-
-/* Form styling Start */
-.login-form-body .form-group {
-    text-align: right !important;
-}
-
-.login-form-body .form-group label{
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    color: #BCBCBC !important;
-}
-
-.login-form-body .form-group input{
-    border: 1px solid #BCBCBC;
-    border-radius: 10px;
-    padding: 15px 10px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #032B48 !important;
-}
-
-
-.login-form-body .form-group input:focus{
-    outline: none !important;
-    border: 1px solid #BCBCBC !important;
-    box-shadow: none !important;
-}
-.eye-icon-password .eye-icon{
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 2;
-}
-
-.login-form-button {
-    background-color: #0066FF !important;
-    color: #FFFFFF !important;
-    border: none !important;
-    border-radius: 10px !important;
-    padding: 13px 200px !important;
-    width: 100% !important;
-    font-size: 18px !important;
-    font-weight: 700 !important;
-}
-
-.privacy-policy-text{
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    color: #BCBCBC !important;
-}
-
-.privacy-policy-text span{
-    color: #0066FF !important;
-}
-
-.register-container .register-text {
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    color: #616161 !important;
-}
-
-.register-container .register-text span{
-    color: #0066FF !important;
-}
-
-
-/* ====================Ahmer css end========================== */
-
-
 /* ==========================Signup=========================================== */
 .signup-container {
    
@@ -2771,6 +2612,174 @@ color: #BCBCBC;
 }
 
 /* ===============================SignUp-end=========================================================== */
+
+
+
+/* ============================================================================================================= */
+/* ===============================Hammad CSS-end=========================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================Ahmer css========================== */
+
+
+/* Login page css */
+
+.rtl {
+    direction: rtl;
+}
+
+.login-container{
+    padding-left: 0px !important;
+    margin: 0px !important;
+}
+
+.login-image {
+    background-color: #f8fbff !important;
+}
+
+.login-image img {
+    width: 100%;
+    height: auto;
+}
+
+.login-form{
+    padding: 100px 100px;
+}
+
+.login-form-header-text h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.login-form-header-button .login-form-header-button-google{
+    background-color: #FAFAFA;
+    color: #616161;
+    border: 1px solid #EEEEEE;
+    padding: 15px 60px;
+    border-radius: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.53px;
+    letter-spacing: -0.2px;
+}
+
+/* Form styling Start */
+.login-form-body .form-group {
+    text-align: right !important;
+}
+
+.login-form-body .form-group label{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #BCBCBC !important;
+}
+
+.login-form-body .form-group input{
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #032B48 !important;
+}
+
+
+.login-form-body .form-group input:focus{
+    outline: none !important;
+    border: 1px solid #BCBCBC !important;
+    box-shadow: none !important;
+}
+.eye-icon-password .eye-icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.login-form-button {
+    background-color: #0066FF !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 13px 200px !important;
+    width: 100% !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.privacy-policy-text{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #BCBCBC !important;
+}
+
+.privacy-policy-text span{
+    color: #0066FF !important;
+}
+
+.register-container .register-text {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #616161 !important;
+}
+
+.register-container .register-text span{
+    color: #0066FF !important;
+}
+
+/* Login page css end */
+
+
+/* ====================Ahmer css end========================== */
+
+
+
 
 
 
