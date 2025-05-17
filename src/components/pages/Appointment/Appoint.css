@@ -1,0 +1,141 @@
+.appointment-container {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Heebo', 'Arial Hebrew', Arial, sans-serif;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.search-section {
+  margin-bottom: 3rem;
+}
+
+.search-bar {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.search-input {
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  text-align: right;
+}
+
+.search-filters {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.filter-item span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+  text-align: right;
+}
+
+.filter-item .form-control {
+  text-align: right;
+}
+
+.recommendations-carousel {
+  margin-top: 3rem;
+  direction: ltr; /* Keep carousel controls in original position */
+}
+
+.carousel-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  color: white;
+  text-align: center;
+  direction: rtl;
+}
+
+.card-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-control-prev {
+  left: 20px;
+}
+
+.carousel .carousel-control-next {
+  right: 20px;
+}
+
+/* Input group adjustments for RTL */
+.input-group > .form-control {
+  border-radius: 0 25px 25px 0 !important;
+}
+
+.input-group > .input-group-text {
+  border-radius: 25px 0 0 25px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-card {
+    height: 300px;
+  }
+
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+} 
